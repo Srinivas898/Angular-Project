@@ -1,0 +1,13 @@
+<div class="parent">
+    <h1>Email Lists</h1>
+    <ul>
+        <li *ngFor="let mail of mails; let i=index";
+            [ngStyle]="{color:mail.completed ? 'grey':'black'}">
+
+            <span>{{i+1}}</span>
+            <span>{{mail.completed}}</span>
+
+        </li>
+    </ul>
+
+</div>

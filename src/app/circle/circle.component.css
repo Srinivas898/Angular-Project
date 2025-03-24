@@ -1,0 +1,26 @@
+.circle{
+    width: 350px;
+    height:400px;
+    background-color:aquamarine;
+    margin-left: 380px;
+    margin-top: 180px;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    padding-top: 50px;
+}
+label{
+    margin-left: 150px;
+    font-size: medium;
+}
+input{
+    margin-left: 85px;
+}
+button{
+    width: 80px;
+    height: 30px;
+    margin-left: 60px;
+    justify-content: space-evenly;
+    background-color: mediumorchid;
+}

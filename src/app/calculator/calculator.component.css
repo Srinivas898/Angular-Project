@@ -1,0 +1,24 @@
+.claculator{
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin-left: 330px;
+    margin-top: 150px;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    padding-top: 20px;
+
+}
+label{
+    text-align: center;
+    font-style: italic;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+button{
+    margin-left: 70px;
+    justify-content: space-between;
+}

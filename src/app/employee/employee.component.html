@@ -1,0 +1,18 @@
+<table border="2px" cellpadding="5px" cellspacing="0px">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Experience</th>
+            <th>Package</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.name}}</td>
+            <td>{{employee.experience}}</td>
+            <td>{{employee.package}}</td>
+            <td>{{employee.role}}</td>
+        </tr>
+    </tbody>
+</table>

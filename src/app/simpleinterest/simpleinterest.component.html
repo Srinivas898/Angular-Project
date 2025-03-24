@@ -1,0 +1,13 @@
+<div class="simple">
+    <h1>Simple Interest Calculator</h1>
+    <hr>
+    <label>Principal Amount</label><br>
+    <input type="number" [(ngModel)]="num1"><br><br>
+    <label>Interest Rate(Per Anum):</label><br>
+    <input type="number" [(ngModel)]="num2"><br><br>
+    <label>Time(No.of Years):</label><br>
+    <input type="number" [(ngModel)]="num3"><br><br>
+    <br>
+    <button (click)="sum()" [disabled]="!num1 && !num2 && !num3">Calculate</button><br><br>
+    <h1>Result is:{{result}}</h1>
+</div>

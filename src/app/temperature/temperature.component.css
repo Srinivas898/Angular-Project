@@ -1,0 +1,19 @@
+.temperature{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(185, 200, 185);
+    margin-top: 150px;
+    margin-left: 400px;
+    border-radius: 20px;text-align: center;
+}
+button{
+    width: 130px;
+    height: 30px;
+    font-size: medium;
+    border-radius: 20px;
+    border: 1px;
+    background-color: aquamarine;
+}
+label{
+    font-size:large;
+}

@@ -1,0 +1,47 @@
+<h1>Directives</h1>
+<table border="2px soliid"  cellspacing="0px" width="300px" height="300px">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Cost</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let product of products">
+        <td>{{product.name}}</td>
+        <td>{{product.cost}}</td>
+        <td>{{product.rating}}</td>
+    </tr>
+</table>
+
+<ol>
+    <li *ngFor="let state of states">{{state}}</li>
+</ol>
+
+<ul>
+    <li *ngFor="let state of states">{{state}}</li>
+</ul>
+
+<select>
+    <option  *ngFor="let state of states">{{state}}</option>
+    
+</select>
+
+<p *ngIf="!IsVisible">Welcome to my World</p>
+<p *ngIf="IsVisible">I am waiting for to get my dream job</p>
+
+<table border="1px soliid" cellpadding="5px" cellspacing="0px" width="300px" height="300px">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Cost</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let product of products">
+        <td>{{product.name}}</td>
+        <td  [ngStyle]="{color:product.cost<800000 ? 'blue':'magenta'}">{{product.cost}}</td>
+        <td [ngClass]="{'green':product.rating<4.5,'red':product.rating>4.5}">{{product.rating}}</td>
+    </tr>
+</table>
+ 

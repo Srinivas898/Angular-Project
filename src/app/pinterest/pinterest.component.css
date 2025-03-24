@@ -1,0 +1,22 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.container{
+    width: 20%;
+    height: 40%;
+    background-color: aquamarine;
+}
+.top{
+    width: 100%;
+    height: 60%;
+    background-color:greenyellow;
+
+}
+.bottom{
+    width: 100%;
+    height: 40%;
+    background-color:white;
+
+}

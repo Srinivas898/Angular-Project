@@ -1,0 +1,67 @@
+<h1>Account Details</h1>
+
+<input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="Search Account">
+
+<select [(ngModel)]="column" >
+    <option>account_name</option>
+    <option>account_number</option>
+    <option>available_balance</option>
+    <option>city</option>
+    <option>ifsc_code</option>
+</select>
+
+<select [(ngModel)]="order">
+    <option>asc</option>
+    <option>desc</option>
+</select>
+
+<button (click)="sort()">Sort</button>
+
+<select [(ngModel)]="limit">
+    <option>10</option>
+    <option>20</option>
+    <option>30</option>
+    <option>40</option>
+    <option>50</option>
+    <option>60</option>
+</select>
+
+<select [(ngModel)]="page">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+</select>
+
+<button (click)="pagination()">Pagination</button>
+
+
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>S No</th>
+            <th>Account Name</th>
+            <th>Account Number</th>
+            <th>Account Balance</th>
+            <th>City</th>
+            <th>IFSC Code</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let account of accounts; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{account.account_name}}</td>
+            <td>{{account.account_number}}</td>
+            <td>{{account.available_balance}}</td>
+            <td>{{account.city}}</td>
+            <td>{{account.ifsc_code}}</td>
+            <td>
+                <button (click)="delete(account.id)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

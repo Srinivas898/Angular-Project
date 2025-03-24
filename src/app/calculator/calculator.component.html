@@ -1,0 +1,16 @@
+<div class="claculator">
+    <h1>CALCULATOR</h1>
+    <hr><br>
+    <label>Num1:</label>
+    <input type="number" [(ngModel)]="num1"><br><br>
+    <br>
+    <label>Num2:</label>
+    <input type="number" [(ngModel)]="num2"><br><br>
+    <br>
+    <button (click)="add()" [disabled]="!num1 && !num2">Add</button>
+    <button (click)="sub()" [disabled]="!num1 && !num2">sub</button>
+    <button (click)="mul()" [disabled]="!num1 && !num2">Mul</button>
+    <button (click)="div()" [disabled]="!num1 && !num2">Div</button>
+    <h1>Result is:{{result}}</h1>
+
+</div>

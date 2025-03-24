@@ -1,0 +1,13 @@
+<div class="BMI">
+    <h1>BMI Calculator</h1>
+    <hr><br>
+    <label>Weight:</label>
+    <input type="number" [(ngModel)]="Weight"><br>
+    <label>Height:</label>
+    <input type="number" [(ngModel)]="Height"><br><br>
+    <button (click)="bmi()" [disabled]="!Weight || !Height">Calculate</button>
+    <h1>Result is:{{result}}</h1>
+    <img src="https://media.istockphoto.com/id/1381071871/vector/body-masse-index-chart-vector-illustration.jpg?s=170667a&w=is&k=20&c=CEouYKAie8ByL33qviOTXIz7eYeME3YVSsIxeG7Hptg=" alt="">
+
+
+</div>
